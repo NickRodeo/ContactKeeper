@@ -7,7 +7,9 @@
     "dev": "nodemon ./dist/src/backend/main.js",
     "tailwind": "npx @tailwindcss/cli -i ./dist/src/frontend/tailwind/input.css -o ./dist/src/frontend/tailwind/output.css --watch",
     "start": "tsc --watch",
-    "webpack": "webpack serve --open --mode development"
+    "webpack": "webpack serve --open --mode development",
+    "postinstall": "prisma generate",
+    "apalah": "npx prisma generate"
   },
   "keywords": [],
   "author": "",
