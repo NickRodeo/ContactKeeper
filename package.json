@@ -3,13 +3,10 @@
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && webpack --mode production",
+    "start": "node dist/src/backend/main.js",
     "dev": "nodemon ./dist/src/backend/main.js",
-    "tailwind": "npx @tailwindcss/cli -i ./dist/src/frontend/tailwind/input.css -o ./dist/src/frontend/tailwind/output.css --watch",
-    "start": "tsc --watch",
-    "webpack": "webpack serve --open --mode development",
-    "postinstall": "prisma generate",
-    "apalah": "npx prisma generate"
+    "postinstall": "prisma generate"
   },
   "keywords": [],
   "author": "",
