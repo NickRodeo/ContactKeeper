@@ -1,0 +1,4 @@
+DELETE http://localhost:3000/api/users/current
+Accept: application/json
+X-API-TOKEN: bb87a663-f1d2-4189-9e77-2d1bc6aee893
+
