@@ -2,3 +2,17 @@ DELETE http://localhost:3000/api/users/current
 Accept: application/json
 X-API-TOKEN: bb87a663-f1d2-4189-9e77-2d1bc6aee893
 
+"test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./dist/src/backend/main.js",
+    "tailwind": "npx @tailwindcss/cli -i ./dist/src/frontend/tailwind/input.css -o ./dist/src/frontend/tailwind/output.css --watch",
+    "start": "tsc --watch",
+    "webpack": "webpack serve --open --mode development",
+    "postinstall": "prisma generate",
+    "apalah": "npx prisma generate"
+
+
+    {
+  "version": 2,
+  "builds": [{ "src": "dist/src/backend/main.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/dist/src/backend/main.js" }]
+}

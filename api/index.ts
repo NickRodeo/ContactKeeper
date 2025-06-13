@@ -1,5 +1,3 @@
-import { createServer } from "http";
-import { app } from "../dist/src/backend/application/web"; // pastikan path sesuai hasil tsc
+const { app } = require("../dist/src/backend/application/web");
 
-const server = createServer(app);
-export default server;
+module.exports = app;
