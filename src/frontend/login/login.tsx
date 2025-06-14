@@ -67,7 +67,7 @@ export default function Login() {
     }
   };
   return (
-    <div className="relative border-amber-400 mt-[200px] border-2 shadow-amber-200 shadow-2xl rounded-2xl py-4 px-3 bg-amber-100 w-1/2 mx-auto">
+    <div className="relative border-amber-400 mt-[200px] border-2 shadow-amber-200 shadow-2xl rounded-2xl py-4 px-3 bg-amber-100 w-[90%] md:w-1/2 mx-auto">
       {loading && (
         <div className="absolute inset-0 flex items-center justify-center rounded-2xl z-10">
           <Loading />
