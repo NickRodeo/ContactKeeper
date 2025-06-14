@@ -47,7 +47,7 @@ export default function Navbar() {
         </div>
 
         {/* Navigation Links */}
-        <ul className="flex space-x-6 text-lg font-medium">
+        <ul className="flex space-x-6 text-sm sm:text-lg font-medium ">
           <li>
             <a href="/" className="hover:text-gray-300 transition">
               Home
